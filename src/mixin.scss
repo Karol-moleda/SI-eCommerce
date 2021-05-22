@@ -1,0 +1,36 @@
+
+@mixin background {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+};
+@mixin box {
+    flex-basis: 23%;
+    padding:2% 0% 2% 2%;
+};
+@mixin boxTable {
+    padding-right: 50px;
+    opacity: 0.8;
+};
+@mixin windows {
+    opacity: 0.2;
+    padding-top:30px;
+};
+@mixin apple{
+    opacity: 0.2;
+    padding-right: 20px;
+    padding-top:30px;
+};
+@mixin one--button {
+    color: $color;
+    border-radius: 8px;
+    height:50px;
+    width:200px;
+};
+
+@mixin two-button {
+    color: $color;
+    height:30px;
+    width:150px;
+    border-radius: 10px;
+};

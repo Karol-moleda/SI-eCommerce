@@ -1,0 +1,44 @@
+// section buying
+.buying{
+    padding:150px 320px 230px 0px;
+    display: $display;
+    background-color:rgb(246,247,250);
+    .buying__logo{padding-left: 80px;padding-top: 50px;}
+    .one__header{font-size: $fontOne};
+    .buying__one{
+        padding:50px 0px 50px 420px;
+        .buying__one--one{
+            background-color: rgb(225,225,225);
+            opacity: 0.8;
+            @include two-button();
+        };
+        .buying__one--button{
+            background-color: rgb(130,202,156);
+            @include one--button();
+        };
+        .buying__one--button:hover{background-color: red};
+        .apple {@include apple()};
+        .windows {@include windows()};
+    };
+    .buying__two{
+        background-color:$color;
+        margin-left: 140px;
+        padding:50px 90px 50px 50px;
+        box-shadow: 0 0 30px #777777;
+        .buying__one--two{
+            background-color: rgb(189,140,191);
+            @include two-button();
+        };
+        .buying__one--button{
+            background-color: rgb(130,202,156);
+            @include one--button();
+        };
+        .buying__one--button:hover{
+            background-color: orange;
+        }
+        .apple {@include apple()};
+        .windows {@include windows()};
+
+    }
+
+};

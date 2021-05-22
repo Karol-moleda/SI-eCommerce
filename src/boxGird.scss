@@ -1,0 +1,92 @@
+// sectionBoxGird
+
+.boxGird{
+    margin: 0;
+    padding: 0;
+    .boxGird__box{
+        display: $display;
+        padding-left: 20%;
+        flex-wrap: wrap;
+        text-align: left;
+        color:$color;
+
+        
+        .boxGird__box--1{
+            @include box();
+            order: 1;
+            background-color: rgb(245,152,157);
+            img{height: 8px;
+                padding-left:5px;}
+            .box__headline{font-size: $fontOne};
+        };
+        .boxGird__box--2{
+            @include box();       
+            order: 2;
+            background-color: rgb(97,95,125);
+            img{height: 8px;padding-left:5px;};
+            .box__headline{font-size: $fontOne};
+        };
+        .boxGird__box--3{
+            @include box();
+            @include background();
+            order:3;
+            background-image: url("./assets/box2.jpg");
+            background-position: $background-position;
+            img{height: 8px;padding-left:5px;};
+            .box__headline{font-size: $fontOne};
+        };
+        .boxGird__box--4{
+            @include box();
+            order:4;
+            background-color: rgb(189,140,191);
+            img{height: 8px;padding-left:5px;};
+            .box__headline{font-size: 30px};
+        }
+        .boxGird__box--5{
+            @include background();
+            background-position: $background-position;
+            flex-basis: 48%;
+            order:5;
+            padding-left: 2%;
+            padding-top: 2%;
+            background-image: url("./assets/box1.jpg");
+            img{height: 8px;padding-left:5px;};
+            .box__headline{font-size: $fontOne};
+            .box_text{padding-right: 20%;};
+        };
+        .boxGird__box--6{
+            @include box();
+            order:6;
+            background-color: rgb(130,202,156);
+            img{height: 8px;padding-left:5px;};
+            .box__headline{font-size: $fontOne};
+        };
+        .boxGird__box--7{
+            @include box();
+            @include background();
+            order:7;
+            background-image: url("./assets/box3.jpg");
+            img{height: 8px;padding-left:5px;};
+            .box__headline{font-size: $fontOne};
+        };
+    };
+
+    .boxGird__table{
+        display: $display;
+        .boxGird__table--logo{padding-left: 80px;padding-top: 50px;};
+        .table--main{
+            font-size: 40px;
+            padding-left: 15%;
+        };}
+
+    .boxGird__tableMain{
+        display: $display;
+        padding-right: 320px;
+        padding-left: 20%;
+        .boxGird__table--1{@include boxTable()};
+        .boxGird__table--2{@include boxTable()};
+        .boxGird__table--3{@include boxTable()};
+        .boxGird__table--4{opacity: 0.8;}
+        };  
+        
+    };

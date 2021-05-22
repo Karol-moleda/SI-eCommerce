@@ -1,0 +1,23 @@
+// section colour
+.colour{
+    background-color: rgb(130,202,156);
+    color:$color;
+    padding:130px 320px 160px 0px; 
+    opacity: 0.8;
+    display: $display;
+
+    .colour__logo{padding-left: 80px;padding-top: 50px;}
+    .colour__header{font-size: 35px;padding-left: 20%;}
+    .colour__table{
+        display: $display;
+        flex-direction: row;
+        padding-left: 20%;
+        .colour__table--one{
+            padding-right: 50px;
+        };
+        .colour__table--two{
+            padding-right: 50px;
+        };
+    }
+
+};
