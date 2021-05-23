@@ -3,8 +3,10 @@
     padding:150px 320px 230px 0px;
     display: $display;
     background-color:rgb(246,247,250);
-    .buying__logo{padding-left: 80px;padding-top: 50px;}
-    .one__header{font-size: $fontOne};
+    .buying__logo{
+        padding-left: 80px;padding-top: 50px;}
+    .one__header{
+        font-size: $fontOne};
     .buying__one{
         padding:50px 0px 50px 420px;
         .buying__one--one{
@@ -16,9 +18,12 @@
             background-color: rgb(130,202,156);
             @include one--button();
         };
-        .buying__one--button:hover{background-color: red};
-        .apple {@include apple()};
-        .windows {@include windows()};
+        .buying__one--button:hover{
+            background-color: red};
+        .apple {
+            @include apple()};
+        .windows {
+            @include windows()};
     };
     .buying__two{
         background-color:$color;
@@ -36,8 +41,10 @@
         .buying__one--button:hover{
             background-color: orange;
         }
-        .apple {@include apple()};
-        .windows {@include windows()};
+        .apple {
+            @include apple()};
+        .windows {
+            @include windows()};
 
     }
 

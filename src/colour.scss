@@ -6,8 +6,12 @@
     opacity: 0.8;
     display: $display;
 
-    .colour__logo{padding-left: 80px;padding-top: 50px;}
-    .colour__header{font-size: 35px;padding-left: 20%;}
+    .colour__logo{
+        padding-left: 80px;
+        padding-top: 50px;}
+    .colour__header{
+        font-size: 35px;
+        padding-left: 20%;}
     .colour__table{
         display: $display;
         flex-direction: row;
